@@ -1,0 +1,8 @@
+<h2> Star Wars Movies</h2>
+
+<section class="movies-list-section">
+  <ul *ngFor="let movie of movies">
+    <p><a routerLink="/movie/{{movie.id}}">{{movie.title}}</a></p>
+  </ul>
+</section>
+

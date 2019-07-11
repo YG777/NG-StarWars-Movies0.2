@@ -1,0 +1,16 @@
+<section class="movie-details-section">
+    <div *ngIf="movie">
+        <h3>{{movie.title | uppercase}}</h3>
+        <p> Description:<br> {{movie.description}}</p>
+        <p>Producer: {{movie.director}}</p>
+        <p>Director: {{movie.director}}</p>
+        <p>Release: {{movie.releaseYear}}</p>
+    </div>
+
+    <div class="return-link">
+        <a (click)="goBack()" routerLink="/movies" href="">Return to the Movies List</a>
+    </div>
+</section>
+
+
+
